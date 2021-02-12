@@ -9,7 +9,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/speedtest', methods=['POST'])
+@app.route('/speed', methods=['POST'])
 def checkSpeed():
     if request.method == 'POST':
         data = request.form['page']
