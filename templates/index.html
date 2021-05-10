@@ -9,13 +9,29 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
    <title>GeetaInfoTech API | W3era</title>
+   <style type="text/css">
+   	.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+   </style>
  </head>
  <body>
  <div class="container">
  	<div class="row">
  		<div class="col-md-12">
-		    <p style="text-align: center;"><img src="https://www.w3era.com/wp-content/uploads/2021/04/final12.png" /></p>
-			<hr style="border: 2px solid blue; border-radius: 5px; width: 600px;">
+		    <div><p style="text-align: center;"><img src="https://www.w3era.com/wp-content/uploads/2021/04/final12.png" width="20%" height="20%" /></p></div>
+			<hr style="border: 1px solid blue; border-radius: 4px; width: 400px;">
+			<p style="text-align: center;"><img src="static/geetalogo.png" width="70px" height="70px" class="rotate"></p>
 			<h1 style="text-align: center;">GeetaInfoTech API <small style="color: orange;">Version: 0.1</small></h1>
 		</div>
 	</div>
@@ -32,44 +48,68 @@
 			  </thead>
 			  <tbody>
 			    <tr>
+			      <td>/getAll</td>
+			      <td>GET</td>
+			      <td>[token, page_url]</td>
+			      <td>JSON</td>
+			    </tr>
+			    <tr>
 			      <td>/getTitle</td>
-			      <td>POST</td>
+			      <td>GET</td>
 			      <td>[token, page_url]</td>
 			      <td>JSON</td>
 			    </tr>
 			    <tr>
 			      <td>/getDescription</td>
-			      <td>POST</td>
+			      <td>GET</td>
 			      <td>[token, page_url]</td>
 			      <td>JSON</td>
 			    </tr>
 			    <tr>
 			      <td>/getHeading</td>
-			      <td>POST</td>
+			      <td>GET</td>
 			      <td>[token, page_url]</td>
 			      <td>JSON</td>
 			    </tr>
 			    <tr>
 			      <td>/getRobots</td>
-			      <td>POST</td>
+			      <td>GET</td>
 			      <td>[token, page_url]</td>
 			      <td>JSON</td>
 			    </tr>
 			    <tr>
 			      <td>/getSitemap</td>
-			      <td>POST</td>
+			      <td>GET</td>
 			      <td>[token, page_url]</td>
 			      <td>JSON</td>
 			    </tr>
 			    <tr>
 			      <td>/getAlt</td>
-			      <td>POST</td>
+			      <td>GET</td>
 			      <td>[token, page_url]</td>
 			      <td>JSON</td>
 			    </tr>
 			    <tr>
 			      <td>/getCanonical</td>
-			      <td>POST</td>
+			      <td>GET</td>
+			      <td>[token, page_url]</td>
+			      <td>JSON</td>
+			    </tr>
+			    <tr>
+			      <td>/getHttpStatus</td>
+			      <td>GET</td>
+			      <td>[token, page_url]</td>
+			      <td>JSON</td>
+			    </tr>
+			    <tr>
+			      <td>/getMixedContent</td>
+			      <td>GET</td>
+			      <td>[token, page_url]</td>
+			      <td>JSON</td>
+			    </tr>
+			    <tr>
+			      <td>/getBroken</td>
+			      <td>GET</td>
 			      <td>[token, page_url]</td>
 			      <td>JSON</td>
 			    </tr>
