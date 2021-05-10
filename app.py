@@ -9,6 +9,10 @@ key = "548d22495f4bbd2bd8cae8c2b804ffa4"
 def index():
     return render_template("index.html")
 
+@app.route("/game")
+def game():
+	return render_template("game.html")
+
 @app.route("/getTitle")
 def title():
 	token = request.args.get("token")
